@@ -20,4 +20,8 @@ public class ArticleService {
 	public Integer saveArticle(ArticleDto article){
 		return repo.insertArticles(article);
 	}
+	
+	public Integer removeArticle(ArticleDto article) {
+		return repo.removeArticles(article);
+	}
 }

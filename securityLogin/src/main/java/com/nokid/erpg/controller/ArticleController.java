@@ -35,4 +35,10 @@ public class ArticleController {
 		log.info("/v1/articles [POST] called");
 		return new ResponseEntity<Integer>(service.saveArticle(article), HttpStatus.OK);
 	}
+	
+	@PostMapping("/v1/articles/delete")
+	public ResponseEntity<Integer> removeArticle(@RequestBody ArticleDto article){
+		log.info("/v1/articles/delete called");
+		return new ResponseEntity<Integer>(service.removeArticle(article), HttpStatus.OK);
+	}
 }
