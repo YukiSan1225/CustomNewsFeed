@@ -17,6 +17,7 @@ public class ArticleService {
 	public List<ArticleDto> getsArticles(){
 		return repo.getArticles();
 	}
+	
 	public Integer saveArticle(ArticleDto article){
 		return repo.insertArticles(article);
 	}
